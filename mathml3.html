@@ -39,151 +39,151 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>MathML - geometrický průměr</h2>   
+                     <h2>MathML - Rozptyl pro spojitou náhodnou veličinu</h2>   
                     </div>
                 </div>           
                  <!-- /. ROW  -->
                   <hr />
               
 <math>
-    <mi>G</mi>
-    <mfenced>
-        <msub>
-            <mi>x</mi>
-            <mn>1</mn>
-        </msub>
-        <msub>
-            <mi>x</mi>
-            <mn>2</mn>
-        </msub>
-        <mi>...</mi>
-        <msub>
-            <mi>x</mi>
-            <mi>n</mi>
-        </msub>
-    </mfenced>
-    <mo>=</mo>
-    <mroot>
-        <mrow>
-            <mfenced>
-                <mrow>
-                    <msub>
-                        <mi>x</mi>
-                        <mn>1</mn>
-                    </msub>
-                    <mo>&#x2062;</mo>
-                    <msub>
-                        <mi>x</mi>
-                        <mn>2</mn>
-                    </msub>
-                    <mi>...</mi>
-                    <msub>
-                        <mi>x</mi>
-                        <mi>n</mi>
-                    </msub>
-                </mrow>
-            </mfenced>
-        </mrow>
-        <mi>n</mi>
-    </mroot>
-    <mo>=</mo>
     <msup>
-        <mfenced>
+        <mi>&sigma;</mi>
+        <mn>2</mn>
+    </msup>
+    <mo>=</mo>
+    <msubsup>
+        <mo>&Integral;</mo>
+        <mn>-&infin;</mn>
+        <mn>&infin;</mn>
+    </msubsup>
+    <msup>
+        <mfenced open="[" close="]">
             <mrow>
-                <munderover>
-                    <mi>&prod;</mi>
+                <mi>x</mi>
+                <mo>-</mo>
+                <mi>E</mi>
+                <mfenced>
                     <mrow>
-                        <mi>i</mi>
-                        <mo>=</mo>
-                        <mn>1</mn>
+                        <mi>X</mi>
                     </mrow>
-                    <mi>n</mi>
-                </munderover>
-                <msub>
-                    <mi>x</mi>
-                    <mi>i</mi>
-                </msub>
+                </mfenced>
             </mrow>
         </mfenced>
-        <mfrac>
+        <mn>2</mn>
+    </msup>
+    <mi>f</mi>
+    <mfenced>
+        <mrow>
+            <mi>x</mi>
+        </mrow>
+    </mfenced>
+    <mi>d</mi>
+    <mi>x</mi>
+    <mo>=</mo>
+    <msubsup>
+        <mo>&Integral;</mo>
+        <mn>-&infin;</mn>
+        <mn>&infin;</mn>
+    </msubsup>
+    <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+    </msup>
+    <mi>f</mi>
+    <mfenced>
+        <mrow>
+            <mi>x</mi>
+        </mrow>
+    </mfenced>
+    <mi>d</mi>
+    <mi>x</mi>
+    <mo>-</mo>
+    <msup>
+        <mfenced open="[" close="]">
             <mrow>
-                <mn>1</mn>
+                <mi>E</mi>
+                <mfenced>
+                    <mrow>
+                        <mi>X</mi>
+                    </mrow>
+                </mfenced>
             </mrow>
-            <mi>n</mi>
-        </mfrac>
+        </mfenced>
+        <mn>2</mn>
     </msup>
 </math>
+
 
   
 <xmp>
 <math>
-    <mi>G</mi>
-    <mfenced>
-        <msub>
-            <mi>x</mi>
-            <mn>1</mn>
-        </msub>
-        <msub>
-            <mi>x</mi>
-            <mn>2</mn>
-        </msub>
-        <mi>...</mi>
-        <msub>
-            <mi>x</mi>
-            <mi>n</mi>
-        </msub>
-    </mfenced>
-    <mo>=</mo>
-    <mroot>
-        <mrow>
-            <mfenced>
-                <mrow>
-                    <msub>
-                        <mi>x</mi>
-                        <mn>1</mn>
-                    </msub>
-                    <mo>&#x2062;</mo>
-                    <msub>
-                        <mi>x</mi>
-                        <mn>2</mn>
-                    </msub>
-                    <mi>...</mi>
-                    <msub>
-                        <mi>x</mi>
-                        <mi>n</mi>
-                    </msub>
-                </mrow>
-            </mfenced>
-        </mrow>
-        <mi>n</mi>
-    </mroot>
-    <mo>=</mo>
     <msup>
-        <mfenced>
+        <mi>&sigma;</mi>
+        <mn>2</mn>
+    </msup>
+    <mo>=</mo>
+    <msubsup>
+        <mo>&Integral;</mo>
+        <mn>-&infin;</mn>
+        <mn>&infin;</mn>
+    </msubsup>
+    <msup>
+        <mfenced open="[" close="]">
             <mrow>
-                <munderover>
-                    <mi>&prod;</mi>
+                <mi>x</mi>
+                <mo>-</mo>
+                <mi>E</mi>
+                <mfenced>
                     <mrow>
-                        <mi>i</mi>
-                        <mo>=</mo>
-                        <mn>1</mn>
+                        <mi>X</mi>
                     </mrow>
-                    <mi>n</mi>
-                </munderover>
-                <msub>
-                    <mi>x</mi>
-                    <mi>i</mi>
-                </msub>
+                </mfenced>
             </mrow>
         </mfenced>
-        <mfrac>
+        <mn>2</mn>
+    </msup>
+    <mi>f</mi>
+    <mfenced>
+        <mrow>
+            <mi>x</mi>
+        </mrow>
+    </mfenced>
+    <mi>d</mi>
+    <mi>x</mi>
+    <mo>=</mo>
+    <msubsup>
+        <mo>&Integral;</mo>
+        <mn>-&infin;</mn>
+        <mn>&infin;</mn>
+    </msubsup>
+    <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+    </msup>
+    <mi>f</mi>
+    <mfenced>
+        <mrow>
+            <mi>x</mi>
+        </mrow>
+    </mfenced>
+    <mi>d</mi>
+    <mi>x</mi>
+    <mo>-</mo>
+    <msup>
+        <mfenced open="[" close="]">
             <mrow>
-                <mn>1</mn>
+                <mi>E</mi>
+                <mfenced>
+                    <mrow>
+                        <mi>X</mi>
+                    </mrow>
+                </mfenced>
             </mrow>
-            <mi>n</mi>
-        </mfrac>
+        </mfenced>
+        <mn>2</mn>
     </msup>
 </math>
+
 
   </xmp>
            
