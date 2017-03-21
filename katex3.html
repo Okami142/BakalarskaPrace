@@ -43,7 +43,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>KaTex - binomická věta</h2>   
+                     <h2>KaTex - rozptyl pro pojitou náhodnou veličinu</h2>   
                     </div>
                 </div>             
                  <!-- /. ROW  -->
@@ -54,7 +54,7 @@
 
 <script>
   const firstFormula = document.getElementById('firstFormula');
-  katex.render ("(x+y)^n = sum_{k=1}^{n} {n \choose k} x^{(n-k)} y^k", firstFormula);
+  katex.render ("\sigma^2 = \int_{-\infty}^{\infty} [x-E(X)]^2 f(x) dx = \int_{-\infty}^{\infty} x^2 f(x) dx  - [E(X)]^2", firstFormula);
 
 
 </script>
