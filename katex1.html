@@ -52,13 +52,13 @@
 
                 <span id="firstFormula"></span>
                 <xmp>
-                (x+y)^n = \sum_{k=1}^{n} {n \\choose k} x^{(n-k)} y^k"
+                (x+y)^n = \sum_{k=0}^{n} {n \\choose k} x^{(n-k)} y^k"
                 </xmp>
   
 
 <script>
   const firstFormula = document.getElementById('firstFormula');
-  katex.render ("(x+y)^n = \\sum_{k=1}^{n} {n \\choose k} x^{(n-k)} y^k", firstFormula);
+  katex.render ("(x+y)^n = \\sum_{k=0}^{n} {n \\choose k} x^{(n-k)} y^k", firstFormula);
 
 
 </script>
