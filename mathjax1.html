@@ -48,7 +48,53 @@
                  <!-- /. ROW  -->
                   <hr />
               
-                 $$(x+y)^n = \sum_{k=1}^{n} {n \choose k} x^{(n-k)} y^k$$           
+                 $$(x+y)^n = \sum_{k=1}^{n} {n \choose k} x^{(n-k)} y^k$$
+                 <br>
+                 `\(x+y\)^n = \sum_{k=1}^{n} ((n),(k)) x^\(n-k\) y^k `
+                 <br>
+                 <math>
+    <msup> <!-- mocnina -->
+        <mfenced>  <!-- závorka -->
+            <mrow> <!-- mocněnec -->
+                <mi>x</mi>
+                <mo>+</mo>
+                <mi>y</mi>
+            </mrow>
+        </mfenced>
+        <mi>n</mi> <!-- mocnitel -->
+    </msup>
+    <mo>=</mo> <!-- rovná se -->
+    <munderover> 
+        <mi>&Sum;</mi> <!-- suma -->
+        <mrow> <!—od k rovno 0 -->
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+        </mrow>
+        <mi>n</mi> <!-- po n -->
+    </munderover>
+    <mrow>
+        <mfenced> <!-- kombinační číslo -->
+            <mfrac linethickness="0"> <!-- tvoří se jako zlomek bez dělící čáry-->
+                <mi>n</mi>
+                <mi>k</mi>
+            </mfrac>
+        </mfenced>
+    </mrow>
+    <msup> <!-- mocnina -->
+        <mi>x</mi> <!-- mocněnec -->
+        <mrow> <!-- mocnitel -->
+            <mi>n</mi>
+            <mo>-</mo>
+            <mi>k</mi>
+        </mrow>
+    </msup>
+    <mo>&#x2062;</mo> <!--neviditelné krát-->
+    <msup><!-- mocnina -->
+        <mi>y</mi><!-- mocněnec -->
+        <mi>k</mi><!-- mocnitel -->
+    </msup>
+  </math>           
     </div>
              <!-- /. PAGE INNER  -->
             </div>
