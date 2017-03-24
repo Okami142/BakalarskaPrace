@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hana Šímová - bakalářská práce</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    
+    <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
+   <script src="https://www.w3schools.com/lib/w3data.js"></script>
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Hana Šímová - bakalářská práce</a>
+                </div>
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <div w3-include-html="navbar.html"></div>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>KaTex - binomická věta</h2>   
+                    </div>
+                </div>             
+                 <!-- /. ROW  -->
+                  <hr />
+
+                <span id="firstFormula"></span>
+                <span id="secondFormula"></span>
+                <span id="thirdFormula"></span>
+                <span id="fourthFormula"></span>
+                
+                <hr />
+                
+                <span id="firstFormula"></span>
+                <span id="secondFormula"></span>
+                <span id="thirdFormula"></span>
+                <span id="fourthFormula"></span>
+  
+
+<script>
+  const firstFormula = document.getElementById('firstFormula');
+  katex.render ("(x+y)^n = \\sum_{k=0}^{n} {n \\choose k} x^{(n-k)} y^k", firstFormula);
+  
+  const secondFormula = document.getElementById('secondFormula');
+  katex.render ("(G(x_1,x_2,...,x_n) = \\sqrt{x_1.x_2...x_n} = (\\prod_{i=1}^{n} x_i)", secondFormula);
+  
+  const thirdFormula = document.getElementById('thirdFormula');
+  katex.render ("\\sigma^2 = \\int_{-\\infty}^{\\infty} [x-E(X)]^2 f(x) dx = \\int_{-\\infty}^{\\infty} x^2 f(x) dx  - [E(X)]^2", thirdFormula);
+
+  const fourthFormula = document.getElementById('fourthFormula');
+  katex.render ("\\frac{\\frac{x+2}{z^{4}}+\\frac{\\sqrt[3]{3x-2}}{z^{2}}}{\\frac{a+b+c}{x+z}}-\\binom{6}{8}+\\int_{0}^{\\infty}x-16 dx+\\sum_{k=0}^{n}\\frac{\\frac{x+2}{z^{4}}+\\frac{\\sqrt[3]{3x-2}}{z^{2}}}{\\frac{a+b+c}{x+z}}", fourthFormula);
+
+</script>
+                 <!-- /. ROW  -->           
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    <script>w3IncludeHTML();</script>
+    
+   
+</body>
+</html>
