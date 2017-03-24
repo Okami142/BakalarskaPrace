@@ -15,9 +15,8 @@
    
    <script src="https://www.w3schools.com/lib/w3data.js"></script>
    
-   
-   <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full'></script>
-
+    
+   <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML-full'></script>
 
 </head>
 <body>
@@ -44,15 +43,57 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>MathJax ASCIIMath</h2>   
+                     <h2>MathJax MathML</h2>   
                     </div>
                 </div>  
           
                  <!-- /. ROW  -->
                   <hr />
               
-
-                 `(x+y)^n = sum_{k=1}^{n} ((n),(k)) x^(n-k) y^k`
+                 <math>
+    <msup> <!-- mocnina -->
+        <mfenced>  <!-- závorka -->
+            <mrow> <!-- mocněnec -->
+                <mi>x</mi>
+                <mo>+</mo>
+                <mi>y</mi>
+            </mrow>
+        </mfenced>
+        <mi>n</mi> <!-- mocnitel -->
+    </msup>
+    <mo>=</mo> <!-- rovná se -->
+    <munderover> 
+        <mi>&Sum;</mi> <!-- suma -->
+        <mrow> <!—od k rovno 0 -->
+            <mi>k</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+        </mrow>
+        <mi>n</mi> <!-- po n -->
+    </munderover>
+    <mrow>
+        <mfenced> <!-- kombinační číslo -->
+            <mfrac linethickness="0"> <!-- tvoří se jako zlomek bez dělící čáry-->
+                <mi>n</mi>
+                <mi>k</mi>
+            </mfrac>
+        </mfenced>
+    </mrow>
+    <msup> <!-- mocnina -->
+        <mi>x</mi> <!-- mocněnec -->
+        <mrow> <!-- mocnitel -->
+            <mi>n</mi>
+            <mo>-</mo>
+            <mi>k</mi>
+        </mrow>
+    </msup>
+    <mo>&#x2062;</mo> <!--neviditelné krát-->
+    <msup><!-- mocnina -->
+        <mi>y</mi><!-- mocněnec -->
+        <mi>k</mi><!-- mocnitel -->
+    </msup>
+  </math>
+                            
     </div>
              <!-- /. PAGE INNER  -->
             </div>
